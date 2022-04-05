@@ -1,0 +1,28 @@
+<!Doctype html>	
+<html>
+<head>
+<style>
+	body {
+		background-image: url("dots.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%
+		}
+</style>	
+<title> About </title>
+<link rel="stylesheet" href="style.css">
+<center> 
+<font size = "5" face = "Heather MS">
+<h1>ABOUT US</h1></font>
+
+
+<td>
+<table align="center" cellpadding="20" cellspacing="3" border="2">
+<th colspan="8"> We're more of a buyer than a seller but occasionally,
+we'll be selling brand new and/or used electronic items,
+as well as non-electronic products. </th>
+<tr>
+
+</center>
+</b>
+</html>
+</head>
