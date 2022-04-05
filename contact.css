@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image:url("dots.jpg");	
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	overflow: overlay;
+}
+
+#container {
+	height: 100vh;
+	width: 100vw;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.1fr 1fr 1fr 0.3fr;
+	grid-template-areas: 
+		"nav nav nav nav"
+		"main main main main"
+		"main main main main"
+		"footer footer footer button";
+}
+
+nav {
+	grid-area: nav;
+	background-color: white;
+	border: 2px solid black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+#branding h1 {
+	color: black;
+	font-family: "permanent marker";
+	font-size: 20px;
+}
+
+#branding h1:hover {
+	cursor: pointer;
+}
+
+.links {
+	display: flex;
+	background-color: white;
+}
+
+nav .links .current a {
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+.logo {
+	text-decoration: none;
+}
+
+nav .links {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 600px;
+	list-style-type: none;
+}
+
+nav .links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+}
+
+nav .links a:hover {
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+.center {
+	grid-area: main;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    height: 500px;
+}
+
+.text {
+	background-color: white;
+	border: 2px solid black;
+	left: 390px;
+	top: 370px;
+	height: auto;
+	width: 40vw;
+	padding: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	grid-area: footer;
+	place-items: center;
+	bottom: 5%;
+	left: 25%;
+	right: 50%;
+	height: auto;
+	width: auto;
+	padding-right: 65px;
+}
+
+.box {
+	background-color: white;
+	border: 2px solid black;
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+	height: 50px;
+	width: 500px;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button1 {
+	grid-area: button;
+	bottom: 15px;
+	right: 50px;
+}
+
+.button1 a {
+	text-decoration: none;
+}
+
+.button1 i {
+	color: white;
+	font-size: 10px;
+}
+
+.button1 h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: black;
+	font-size: 30px;
+	height: 50px;
+	width: 120px;
+}
